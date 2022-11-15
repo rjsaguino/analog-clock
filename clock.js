@@ -8,8 +8,8 @@ const timeFunction = () => {
   second = d.getSeconds() * 6;
   minute = d.getMinutes() * 6;
   hour = d.getHours() * 30 + Math.round(minute / 12);
-  document.querySelector(
-    "#second-hand"
+  document.getElementById(
+    "second-hand"
   ).style.transform = `rotate(${second}deg)`;
   document.getElementById(
     "minute-hand"
